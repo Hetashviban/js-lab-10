@@ -1,0 +1,78 @@
+/* styles.css */
+
+@charset "utf-8";
+
+body {
+  font-family: sans-serif;
+  font-size: 101%;
+  line-height: 1.4;
+  background-color: #f4f4f4;
+  margin: 0 auto; /* Center the content */
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+header p {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 3em; /* Center the items */
+}
+
+section article {
+  border: 1px solid black;
+  box-shadow: 0 2px 14px grey;
+  padding: 2.5%;
+  width: 45%; /* Adjust width for smaller screens */
+  background-color: #fff;
+  margin: 1em 0.5em; /* Adjust margin for spacing */
+}
+
+article img {
+  display: block;
+  height: 150px;
+  width: 90px;
+  max-width: 100%;
+  height: auto;
+}
+
+section p {
+  margin: 5px 0;
+}
+
+section ul {
+  margin-top: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  section {
+    flex-direction: column; /* Stack sections on top of each other */
+    align-items: center; /* Center items in each section */
+  }
+
+  section article {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
